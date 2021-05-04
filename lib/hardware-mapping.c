@@ -50,20 +50,20 @@ struct HardwareMapping matrix_hardware_mappings[] = {
 
     /* All the following are only available with 40 GPIP pins, on A+/B+/Pi2,3 */
     /* Chain 1 */
-    .p1_r1         = GPIO_BIT(12),
-    .p1_g1         = GPIO_BIT(5),
-    .p1_b1         = GPIO_BIT(6),
-    .p1_r2         = GPIO_BIT(19),
-    .p1_g2         = GPIO_BIT(13),
-    .p1_b2         = GPIO_BIT(20),
+    .p2_r1         = GPIO_BIT(12),
+    .p2_g1         = GPIO_BIT(5),
+    .p2_b1         = GPIO_BIT(6),
+    .p2_r2         = GPIO_BIT(19),
+    .p2_g2         = GPIO_BIT(13),
+    .p2_b2         = GPIO_BIT(20),
 
     /* Chain 2 */
-    .p2_r1         = GPIO_BIT(14), /* masks TxD when parallel=3 */
-    .p2_g1         = GPIO_BIT(2),  /* masks SCL when parallel=3 */
-    .p2_b1         = GPIO_BIT(3),  /* masks SDA when parallel=3 */
-    .p2_r2         = GPIO_BIT(26),
-    .p2_g2         = GPIO_BIT(16),
-    .p2_b2         = GPIO_BIT(21),
+    .p1_r1         = GPIO_BIT(14), /* masks TxD when parallel=3 */
+    .p1_g1         = GPIO_BIT(2),  /* masks SCL when parallel=3 */
+    .p1_b1         = GPIO_BIT(3),  /* masks SDA when parallel=3 */
+    .p1_r2         = GPIO_BIT(26),
+    .p1_g2         = GPIO_BIT(16),
+    .p1_b2         = GPIO_BIT(21),
   },
 
   /*
