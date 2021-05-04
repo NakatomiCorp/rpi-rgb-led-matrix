@@ -168,12 +168,12 @@ INCDIR=../include
 CFLAGS=-W -Wall -Wextra -Wno-unused-parameter -O3 -g -fPIC $(DEFINES)
 CXXFLAGS=$(CFLAGS) -fno-exceptions -std=c++11
 
-all : $(TARGET).a $(TARGET).so.1
+all : $(TARGET).a $(TARGET).so
 
 $(TARGET).a : $(OBJECTS)
 	$(AR) rcs $@ $^
 
-$(TARGET).so.1 : $(OBJECTS)
+$(TARGET).so : $(OBJECTS)
 	$(CXX) -shared -Wl,-soname,$@ -o $@ $^ -lpthread  -lrt -lm -lpthread
 
 led-matrix.o: led-matrix.cc $(INCDIR)/led-matrix.h
